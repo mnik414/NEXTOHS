@@ -1,0 +1,25 @@
+{
+  "name": "nexthoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon serve.js",
+    "start": "node serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnik414/NEXTOHS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnik414/NEXTOHS/issues"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "uuid": "8.3.2"
+  },
+  "homepage": "https://github.com/mnik414/NEXTOHS#readme"
+}
