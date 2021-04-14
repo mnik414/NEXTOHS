@@ -11,24 +11,13 @@
   width: 70%;
   height: 70%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.loginTop {
+.liginLeft,
+.liginRight {
   float: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-
-.loginBottom {
-  float: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -40,7 +29,7 @@
 }
 
 .loginDesc {
-  font-size: 15px;
+  font-size: 24px;
 }
 
 .loginBox {
@@ -92,7 +81,4 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-}
-
-@media (min-width: 768px) {
 }
