@@ -6,9 +6,7 @@ export default function Login() {
 
   const [password, setPassword] = useState("");
 
-  const login = (e) => {
-    fetch();
-  };
+  const login = (e) => {};
 
   return (
     <div className={styles.login}>
