@@ -1,6 +1,9 @@
 const express = require("express");
 const uuidv4 = require("uuid").v4;
+var cors = require("cors");
 const app = express();
+app.use(cors());
+
 const port = 4000;
 
 const userCache = [];
