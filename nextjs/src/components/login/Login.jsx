@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./login.module.css";
+import Link from "next/link";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -7,7 +8,6 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   const login = async (e) => {
-    console.log(username, password);
     const res = await fetch(
       `http://localhost:4000/login?username=${username}&password=${password}`
     );
@@ -41,7 +41,9 @@ export default function Login() {
               ورود
             </button>
             <span className={styles.loginForget}>بازیابی رمز عبور؟</span>
-            <button className={styles.loginRegisterButton}>ثبت نام</button>
+            <Link href="./register">
+              <button className={styles.loginRegisterButton}>ثبت نام</button>
+            </Link>
           </div>
         </div>
       </div>

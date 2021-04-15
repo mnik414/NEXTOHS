@@ -56,7 +56,7 @@
 .loginInput {
   height: 50px;
   border-radius: 10px;
-  border: solid gray;
+  border: solid gray 1px;
   font-size: 18px;
   padding-left: 20px;
 }
