@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useState } from "react";
 import styles from "./register.module.css";
 
+const ENDPOINT = "http://localhost:4000/register";
+
 export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -9,8 +11,26 @@ export default function Register() {
   const [passwordAgain, setPasswordAgain] = useState("");
 
   const signUp = async (e) => {
-    const res = await fetch(
-      `http://localhost:4000/login?username=${username}&email=${email}&password=${password}&passwordAgain=${passwordAgain}`
+    if (password != passwordAgain) {
+      // notif
+      console.log("mismath pw");
+      return;
+    }
+
+    const res = await fetch(ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password, email }),
+    }).catch((e) => {
+      console.log(e);
+    });
+
+    console.log(
+      await res.json().catch((e) => {
+        console.log(e);
+      })
     );
   };
 

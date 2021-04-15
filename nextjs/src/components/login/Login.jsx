@@ -2,14 +2,29 @@ import { useState } from "react";
 import styles from "./login.module.css";
 import Link from "next/link";
 
+const ENDPOINT = "http://localhost:4000/login";
+
 export default function Login() {
   const [username, setUsername] = useState("");
-
   const [password, setPassword] = useState("");
 
   const login = async (e) => {
-    const res = await fetch(
-      `http://localhost:4000/login?username=${username}&password=${password}`
+    if (!username || !password) return;
+
+    const res = await fetch(ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
+    }).catch((e) => {
+      console.log(e);
+    });
+
+    console.log(
+      await res.json().catch((e) => {
+        console.log(e);
+      })
     );
   };
 
