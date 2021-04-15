@@ -6,7 +6,12 @@ export default function Login() {
 
   const [password, setPassword] = useState("");
 
-  const login = (e) => {};
+  const login = async (e) => {
+    console.log(username, password);
+    const res = await fetch(
+      `http://localhost:4000/login?username=${username}&password=${password}`
+    );
+  };
 
   return (
     <div className={styles.login}>
