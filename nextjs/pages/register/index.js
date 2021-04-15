@@ -1,9 +1,9 @@
-import Login from "../../src/components/login/Login";
+import Register from "../../src/components/register/Register";
 
 export default function Home() {
   return (
     <div>
-      <Login />
+      <Register />
     </div>
   );
 }

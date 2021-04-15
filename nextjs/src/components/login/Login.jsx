@@ -7,7 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   const login = (e) => {
-    console.log(username, password);
+    fetch();
   };
 
   return (
@@ -28,6 +28,7 @@ export default function Login() {
               className={styles.loginInput}
             />
             <input
+              type="password"
               onChange={(e) => setPassword(e.target.value)}
               id="passwordInput"
               placeholder="رمز عبور"

@@ -1,6 +1,6 @@
-import styles from "./login.module.css";
+import styles from "./register.module.css";
 
-export default function Login() {
+export default function Register() {
   return (
     <div className={styles.login}>
       <div className={styles.loginWrapper}>
@@ -14,10 +14,9 @@ export default function Login() {
           <div className={styles.loginBox}>
             <input placeholder="نام کاربری" className={styles.loginInput} />
             <input placeholder="رمز عبور" className={styles.loginInput} />
-            <button className={styles.loginButton}>ورود</button>
-            <span className={styles.loginForget}>بازیابی رمز عبور؟</span>
+            <button className={styles.loginButton}>ثبت نام</button>
             <button className={styles.loginRegisterButton}>
-              ساخت اکانت جدید
+              ورود به اکانت
             </button>
           </div>
         </div>
