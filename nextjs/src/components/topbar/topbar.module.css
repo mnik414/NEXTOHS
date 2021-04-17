@@ -1,0 +1,80 @@
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.topbarLeft {
+  flex: 6;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.topbarRight {
+  flex: 6;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+}
+
+.hamburgerMenu span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 2.5px;
+}
+
+.topbarLinks {
+  display: none;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbarLink {
+  padding: 5px 10px;
+  font-size: 15px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .hamburgerMenu {
+    display: none;
+  }
+  .topbarLinks {
+    display: flex;
+  }
+}
+
+/* .topbarMenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hamburgerMenu {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.mainNav {
+  display: none;
+}
+
+.topbarLogo {
+  margin: 0;
+  padding: 0;
+} */

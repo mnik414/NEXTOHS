@@ -38,7 +38,9 @@ export default function Register() {
     <div className={styles.login}>
       <div className={styles.loginWrapper}>
         <div className={styles.loginLeft}>
-          <h3 className={styles.loginLogo}>NEXTOHS</h3>
+          <Link href="./home">
+            <h3 className={styles.loginLogo}>NEXTOHS</h3>
+          </Link>
           <span className={styles.loginDesc}>
             برای ورود نام کاربری و رمز خود را وارد کنید
           </span>
@@ -80,9 +82,7 @@ export default function Register() {
               ثبت نام
             </button>
             <Link href="./login">
-              <button className={styles.loginRegisterButton}>
-                ورود به اکانت
-              </button>
+              <button className={styles.loginRegisterButton}>ورود</button>
             </Link>
           </div>
         </div>

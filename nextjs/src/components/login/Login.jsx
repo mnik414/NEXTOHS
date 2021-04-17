@@ -32,7 +32,9 @@ export default function Login() {
     <div className={styles.login}>
       <div className={styles.loginWrapper}>
         <div className={styles.loginTop}>
-          <h3 className={styles.loginLogo}>NEXTOHS</h3>
+          <Link href="./home">
+            <h3 className={styles.loginLogo}>NEXTOHS</h3>
+          </Link>
           <span className={styles.loginDesc}>
             برای ورود نام کاربری و رمز خود را وارد کنید
           </span>

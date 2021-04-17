@@ -24,23 +24,24 @@
   padding-bottom: 20px;
 }
 
+.loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.loginDesc {
+  font-size: 15px;
+}
+
 .loginBottom {
   float: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.loginLogo {
-  font-size: 50px;
-  font-weight: 800;
-  color: #1775ee;
-  margin-bottom: 10px;
-}
-
-.loginDesc {
-  font-size: 15px;
 }
 
 .loginBox {
