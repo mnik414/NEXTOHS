@@ -37,7 +37,7 @@ export default function Register() {
   return (
     <div className={styles.login}>
       <div className={styles.loginWrapper}>
-        <div className={styles.loginLeft}>
+        <div className={styles.loginTop}>
           <Link href="./home">
             <h3 className={styles.loginLogo}>NEXTOHS</h3>
           </Link>
@@ -45,7 +45,7 @@ export default function Register() {
             برای ورود نام کاربری و رمز خود را وارد کنید
           </span>
         </div>
-        <div className={styles.loginRight}>
+        <div className={styles.loginBottom}>
           <div className={styles.loginBox}>
             <input
               onChange={(e) => {
@@ -78,11 +78,11 @@ export default function Register() {
               placeholder="رمزعبور دوباره"
               className={styles.loginInput}
             />
-            <button onClick={signUp} className={styles.loginButton}>
+            <button onClick={signUp} className={styles.RegisterButton}>
               ثبت نام
             </button>
             <Link href="./login">
-              <button className={styles.loginRegisterButton}>ورود</button>
+              <button className={styles.loginButton}>ورود</button>
             </Link>
           </div>
         </div>

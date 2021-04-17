@@ -1,0 +1,47 @@
+.homeWrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.homeCard {
+  width: 180px;
+  height: 250px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: -1px 5px 9px 0px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+
+.homeCardTop {
+  margin: 5px;
+}
+
+.homeCardImg {
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.homeCardBottom {
+  padding: 2px;
+}
+
+.homeCardTitle {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  font-family: BYekan;
+  text-align: center;
+}
+
+.homeCardDisc {
+  font-size: 15px;
+  padding: 5px;
+  font-family: BYekan;
+  text-align: center;
+  line-height: 20px;
+}

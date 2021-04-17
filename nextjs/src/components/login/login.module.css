@@ -60,6 +60,7 @@
   border: solid gray 1px;
   font-size: 18px;
   padding-left: 20px;
+  font-family: BYekan;
 }
 
 .loginInput:focus {
@@ -75,6 +76,7 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  font-family: BYekan;
 }
 
 .loginForget {
@@ -93,6 +95,7 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  font-family: BYekan;
 }
 
 @media (min-width: 768px) {

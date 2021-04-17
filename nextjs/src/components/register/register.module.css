@@ -5,6 +5,7 @@
   background-color: #f1f1f1;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .loginWrapper {
@@ -60,14 +61,15 @@
   border-radius: 11px;
   border: solid gray 1px;
   font-size: 18px;
-  padding-left: 20px;
+  padding-right: 20px;
+  font-family: BYekan;
 }
 
 .loginInput:focus {
   outline: none;
 }
 
-.loginButton {
+.RegisterButton {
   height: 50px;
   border-radius: 10px;
   border: none;
@@ -76,6 +78,7 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  font-family: BYekan;
 }
 
 .loginForget {
@@ -83,7 +86,7 @@
   color: #1775ee;
 }
 
-.loginRegisterButton {
+.loginButton {
   width: 60%;
   align-self: center;
   height: 50px;
@@ -94,4 +97,5 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  font-family: BYekan;
 }

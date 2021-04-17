@@ -1,4 +1,4 @@
-import style from "./ergonomic.module.css";
+import style from "./home.module.css";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
             </div>
             <div className={style.homeCardBottom}>
               <div className={style.homeCardTitle}>
-                ارزیابی پوسچربه روش Rula
+                ارزیابی پوسچرهای ارگونومیک
               </div>
               <div className={style.homeCardDisc}>
                 با استفاده از این بخش این امکان را دارید که به چندین روش ارزیابی

@@ -4,13 +4,6 @@ import Link from "next/link";
 export default function Topbar() {
   return (
     <div className={style.topbarContainer}>
-      <div className={style.topbarLeft}>
-        <span className={style.logo}>
-          <Link href="./home">
-            <a>NEXTOHS</a>
-          </Link>
-        </span>
-      </div>
       <div className={style.topbarRight}>
         <div className={style.topbarLinks}>
           <span className={style.topbarLink}>
@@ -39,6 +32,13 @@ export default function Topbar() {
           <span></span>
           <span></span>
         </div>
+      </div>
+      <div className={style.topbarLeft}>
+        <span className={style.logo}>
+          <Link href="./home">
+            <a>NEXTOHS</a>
+          </Link>
+        </span>
       </div>
     </div>
   );

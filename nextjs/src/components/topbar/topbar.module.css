@@ -4,12 +4,14 @@
   background-color: #1877f2;
   display: flex;
   align-items: center;
-  position: sticky;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   top: 0;
 }
 
 .topbarLeft {
-  flex: 6;
 }
 
 .logo {
@@ -20,10 +22,9 @@
 }
 
 .topbarRight {
-  flex: 6;
   display: flex;
-  flex-direction: row-reverse;
   margin-right: 20px;
+  flex-grow: 1;
 }
 
 .hamburgerMenu span {
@@ -37,7 +38,6 @@
 
 .topbarLinks {
   display: none;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
