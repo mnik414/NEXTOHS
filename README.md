@@ -6,8 +6,7 @@ Multi-Platfrom Demo Project.
 
 | Codebase             |      Description      |
 | :------------------- | :-------------------: |
-| server |      Node Server      |
-| react       |    React frontend     |
-| nextjs     |   Next.js frontend    |
-| electron   |   Electron Wrapper    |
-| react-native       |   React Native App    |
+| [server](server)     |      Node Server      |
+| [nextjs](nextjs)     |   Next.js frontend    |
+| [electron](electron)   |   Electron Wrapper    |
+| [react-native](react-native)       |   React Native App    |
