@@ -4,7 +4,7 @@
   background-color: #1877f2;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;

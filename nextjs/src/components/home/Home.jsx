@@ -1,27 +1,32 @@
 import style from "./home.module.css";
 import Link from "next/link";
+import { HomeCard } from "../../data";
 
 export default function Home() {
   return (
     <div className={style.homeContainer}>
-      <div className={style.homeWrapper}>
-        <Link href="./ergonomic">
-          <div className={style.homeCard}>
-            <div className={style.homeCardTop}>
-              <img className={style.homeCardImg} src="./img/ergonomic/1.jpg" />
-            </div>
-            <div className={style.homeCardBottom}>
-              <div className={style.homeCardTitle}>
-                ارزیابی پوسچرهای ارگونومیک
-              </div>
-              <div className={style.homeCardDisc}>
-                با استفاده از این بخش این امکان را دارید که به چندین روش ارزیابی
-                پوسچر انجام دهید
-              </div>
-            </div>
+      {HomeCard.map((c) => (
+        <Card key={c.id} card={c} />
+      ))}
+    </div>
+  );
+}
+
+export function Card({ card }) {
+  console.log(card);
+  return (
+    <div className={style.homeWrapper}>
+      <Link href={card.link}>
+        <div className={style.homeCard}>
+          <div className={style.homeCardTop}>
+            <img className={style.homeCardImg} src={card.img} />
           </div>
-        </Link>
-      </div>
+          <div className={style.homeCardBottom}>
+            <div className={style.homeCardTitle}>{card.title}</div>
+            <div className={style.homeCardDisc}>{card.disc}</div>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 }
